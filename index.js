@@ -51,6 +51,15 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
   });
 
+  app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, 'aerox.html'));
+  });
+  
+  // Serve index.html for the '/home' endpoint as well
+  app.get("/aerox", (req, res) => {
+    res.sendFile(path.join(__dirname, 'aerox.html'));
+  });
+
 app.get("/contact",(req,res)=>{
     res.render("contact.ejs");
 });
