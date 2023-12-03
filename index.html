@@ -262,7 +262,9 @@ width:100%;
 .active, .dot:hover {
   background-color: #717171;
 }
-  
+#mobile_view_content{
+	display:none;
+}
 
     /* making it responsive */
    
@@ -391,14 +393,16 @@ width:100%;
 
     @media only screen and (min-width: 768px) and (max-width: 1268px) {
 
-
+      #mobile_view_content{
+	      display:none;
+      }
       /* Styles for screens between 768px and 1023px */
       body {
         font-size: 14px;
       }
 
       .about-me{
-        margin-left:  -2% !important;
+        margin-left:  0.75% !important;
       }
 
       .about {
@@ -1607,7 +1611,7 @@ width:100%;
                         </div>
                       
                       <div class="mySlides">
-                        <p style="font-size:1.5vw;">This distinguished national-level technical event marks the
+                        <p style="font-size:1.5vw;"><span id="mobile_view_content">This distinguished national-level technical event is the convergence of aviation and technology, tailored for tech enthusiasts, students, professionals, and our expansive community. Unfolding a vibrant tapestry of opportunities across multiple domains, it creates a dynamic space for collaboration, learning, and connection with techies nationwide, fostering shared knowledge and innovation at this extraordinary gathering.</span>This distinguished national-level technical event marks the
                           convergence of aviation and technology, tailored for tech enthusiasts, students,
                           professionals, and our expansive community. Unfolding a vibrant tapestry of opportunities
                           across diverse domains, it provides a dynamic space for collaboration, learning, and
