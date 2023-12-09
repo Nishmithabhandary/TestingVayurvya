@@ -1010,21 +1010,25 @@ width:100%;
         margin-left: 0% !important;
         height: 400px;
       } */
-	 .container-10022 {
-  display: flex; /* Use flexbox for layout */
-  justify-content: space-between; /* Distribute boxes evenly */
-  align-items: center; /* Vertically center items */
-  overflow: hidden;
-  width: calc(100vw - 40px) !important; /* Adjust width for scrollbar */
-  margin: -35% auto 0 auto !important; /* Center the container */
-  max-width: 460px; /* Set a maximum width */
-  height: 400px;
+	 @media only screen and (max-width: 391px) {
+  .container-10022 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    width: calc(100vw - 40px) !important;
+    margin: -35% auto 0 auto !important;
+    max-width: 460px;
+    height: 400px;
+  }
+
+  .balloon {
+    flex: 0 0 calc(25% - 10px); /* Adjust the size of each box */
+    max-width: calc(25% - 10px); /* Set max-width to fit within the container */
+    /* Other necessary styles for the balloons */
+  }
 }
 
-.balloon {
-  flex: 0 0 calc(25% - 10px); /* Adjust the size of each box */
-  /* Add any other necessary styles for the balloons */
-}
 
 
 
