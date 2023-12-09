@@ -3063,7 +3063,7 @@ button {
 /** banner section **/
 
 .banner_main {
-    background: url(../img/event1_aerox.gif);
+/*     background: url(../img/event1_aerox.gif); */
      background-repeat: no-repeat;
      min-height: 700px;
      display: flex;
