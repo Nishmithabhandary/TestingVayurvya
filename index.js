@@ -74,8 +74,8 @@ app.get("/aeroX", (req, res) => {
   app.get("/rotorCraft", (req, res) => {
     res.sendFile(path.join(__dirname, 'events_vayu', 'rotorCraft.html'));
   });
-  app.get("/skyProbe", (req, res) => {
-    res.sendFile(path.join(__dirname, 'events_vayu', 'skyProbe.html'));
+  app.get("/Skyprobe", (req, res) => {
+    res.sendFile(path.join(__dirname, 'events_vayu', 'Skyprobe.html'));
   });
   app.get("/events", (req, res) => {
     res.sendFile(path.join(__dirname, 'events_vayu', 'vichaar.html'));
