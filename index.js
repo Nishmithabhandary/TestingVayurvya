@@ -60,6 +60,10 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, 'aerox.html'));
   });
 
+app.get("/skyprobe", (req, res) => {
+    res.sendFile(path.join(__dirname, 'Skyprobe.html'));
+  });
+
 app.get("/contact",(req,res)=>{
     res.render("contact.ejs");
 });
