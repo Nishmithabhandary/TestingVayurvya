@@ -64,6 +64,14 @@ app.get("/skyprobe", (req, res) => {
     res.sendFile(path.join(__dirname, 'Skyprobe.html'));
   });
 
+app.get("/vichaar", (req, res) => {
+    res.sendFile(path.join(__dirname, 'Vichaar.html'));
+  });
+
+app.get("/words_with_wings", (req, res) => {
+    res.sendFile(path.join(__dirname, 'Words_With_wings.html'));
+  });
+
 app.get("/contact",(req,res)=>{
     res.render("contact.ejs");
 });
@@ -80,6 +88,13 @@ app.get("/aeroX", (req, res) => {
   });
   app.get("/skyprobe", (req, res) => {
     res.sendFile(path.join(__dirname, 'events_vayu', 'Skyprobe.html'));
+  });
+app.get("/vichaar", (req, res) => {
+    res.sendFile(path.join(__dirname, 'events_vayu', 'Vichaar.html'));
+  });
+
+app.get("/words_with_wings", (req, res) => {
+    res.sendFile(path.join(__dirname, 'events_vayu', 'Words_With_Wings.html'));
   });
   app.get("/events", (req, res) => {
     res.sendFile(path.join(__dirname, 'events_vayu', 'vichaar.html'));
