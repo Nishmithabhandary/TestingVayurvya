@@ -48,7 +48,7 @@
         .navbar-toggler {
                margin-top: -1.65em;
             }
-       #background-video {
+/*        #background-video {
   width: 100vw !important;
   height: 110vh;
   object-fit:cover;
@@ -59,7 +59,22 @@
   bottom: 0;
   z-index: -1;
           
-       }
+       } */
+       .background-container {
+  width: 100vw !important;
+  height: 110vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url('/assets/img/Skyprobe_background_image.jpeg');
+  background-size: cover;
+  background-position: center;
+  /* You can add additional styles like background-repeat, etc. as needed */
+}
+
       
    }
   
@@ -89,7 +104,7 @@
     padding-bottom: 0 !important;
 }
  */
-#background-video {
+/* #background-video {
   width: 105vw;
   height: 110vh;
   object-fit:cover;
@@ -100,7 +115,22 @@
   bottom: 0;
   z-index: -1;
    
+} */
+   .background-container {
+   width: 105vw;
+  height: 110vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url('/assets/img/Skyprobe_background_image.jpeg');
+  background-size: cover;
+  background-position: center;
+  /* You can add additional styles like background-repeat, etc. as needed */
 }
+
 
 body{
    overflow-x: hidden;
@@ -125,7 +155,9 @@ body{
 <!--             <video id="background-video" autoplay loop muted >
                <source src="/assets/img/For website-AeroX teaser.mp4" type="video/mp4">
                </video> -->
-            <img id="background-video" src="/assets/img/Skyprobe_background_image.jpeg" alt="Background Image">
+<!--             <img id="background-video" src="/assets/img/Skyprobe_background_image.jpeg" alt="Background Image">
+ -->
+            <div class="background-container"></div>
 
             <div class="row">
                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
